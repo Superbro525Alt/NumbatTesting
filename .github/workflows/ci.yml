@@ -39,7 +39,7 @@ jobs:
           path: build/allOutputs
 
   build-host:
-    env: 
+    env:
       MACOSX_DEPLOYMENT_TARGET: 12
     strategy:
       fail-fast: false

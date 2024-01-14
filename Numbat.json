@@ -1,0 +1,31 @@
+{
+    "fileName": "Numbat.json",
+    "name": "Numbat",
+    "version": "0.0.1",
+    "frcYear": "2024",
+    "uuid": "Generate A Unique GUID https://guidgenerator.com/online-guid-generator.aspx and insert it here", This line is to purposely make this fail to parse
+    "mavenUrls": [
+        "ThisNeedsToBeTheRootMavenUrl"
+    ],
+    "jsonUrl": "InsertSomeUrlHere",
+    "cppDependencies": [
+        {
+            "groupId": "com.vendor.frc",
+            "artifactId": "Vendor-cpp",
+            "version": "0.0.1",
+            "libName": "Vendor",
+            "headerClassifier": "headers",
+            "sharedLibrary": false,
+            "skipInvalidPlatforms": true,
+            "binaryPlatforms": [
+                "windowsx86-64",
+                "windowsx86",
+                "linuxarm64",
+                "linuxx86-64",
+                "linuxathena",
+                "linuxarm32",
+                "osxuniversal"
+            ]
+        },
+    ]
+}
