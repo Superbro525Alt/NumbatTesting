@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches-ignore:
-      - main
+      - master
 
 jobs:
   wpiformat:
@@ -17,7 +17,7 @@ jobs:
       - name: Fetch all history and metadata
         run: |
           git checkout -b pr
-          git branch -f main origin/main
+          git branch -f master origin/master
       - name: Set up Python 3.8
         uses: actions/setup-python@v4
         with:
@@ -56,7 +56,7 @@ jobs:
         run: |
           git config --global --add safe.directory /__w/Numbat/Numbat
           git checkout -b pr
-          git branch -f main origin/main
+          git branch -f master origin/master
       - name: Set up Python 3.8
         uses: actions/setup-python@v4
         with:
