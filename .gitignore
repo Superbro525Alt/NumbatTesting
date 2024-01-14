@@ -155,3 +155,5 @@ bin/
 # editors
 .idea
 .vscode
+/.cache
+compile_commands.json
