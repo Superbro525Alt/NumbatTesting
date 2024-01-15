@@ -4,4 +4,8 @@
 
 #pragma once
 
-namespace numbat {}  // namespace numbat
+#include "Loggers.h"
+
+namespace numbat {
+using namespace loggers;
+}  // namespace numbat
