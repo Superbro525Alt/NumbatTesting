@@ -4,6 +4,7 @@
 
 #pragma once
 
+#include "LoggerSingleton.h"
 #include "Loggers.h"
 
 namespace numbat {
