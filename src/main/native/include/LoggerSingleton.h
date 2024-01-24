@@ -5,6 +5,7 @@
 #pragma once
 
 #include <frc/smartdashboard/SendableChooser.h>
+#include <frc/smartdashboard/SmartDashboard.h>
 
 #include <functional>
 #include <string>
@@ -12,6 +13,7 @@
 #include <vector>
 
 namespace loggers {
+using AUTO_TYPE = std::pair<std::string, std::pair<std::function<void()>, std::function<void()>>>;
 enum class MetaData {
   kProjectName,
   // kBuildDate,
@@ -42,7 +44,7 @@ class SingletonLogger {
   std::vector<MetaData> m_loggedMetaData;
   StoredMetaData m_storedMetaData;
   frc::SendableChooser<std::string> m_chooser;
-  std::vector<std::pair<std::string, std::pair<std::function<void()>, std::function<void()>>>> autos;
+  std::vector<AUTO_TYPE> autos;
   std::string m_autoSelected;
 };
 }  // namespace loggers
