@@ -23,10 +23,6 @@ jobs:
       run: |
         ./gradlew publish
 
-    - name: Gather old Maven artifacts
-      run: |
-        if (git ls-remote --heads origin maven) { git pull origin maven }
-
     - name: Restructure project
       run: |
         mkdir maven\releases  
