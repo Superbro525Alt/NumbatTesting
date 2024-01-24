@@ -8,8 +8,7 @@
 
 using namespace loggers;
 
-NTLogger::NTLogger(std::string name, std::string path,
-                   std::vector<NT_Table> tables)
+NTLogger::NTLogger(std::string name, std::string path, std::vector<NT_Table> tables)
     : name(name), tables(tables) {}
 
 NTLogger::~NTLogger() {

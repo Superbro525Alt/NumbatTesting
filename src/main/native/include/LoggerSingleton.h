@@ -42,9 +42,7 @@ class SingletonLogger {
   std::vector<MetaData> m_loggedMetaData;
   StoredMetaData m_storedMetaData;
   frc::SendableChooser<std::string> m_chooser;
-  std::vector<std::pair<
-      std::string, std::pair<std::function<void()>, std::function<void()>>>>
-      autos;
+  std::vector<std::pair<std::string, std::pair<std::function<void()>, std::function<void()>>>> autos;
   std::string m_autoSelected;
 };
 }  // namespace loggers
